@@ -81,6 +81,21 @@ var allViolaBows  = function(){
 
 }
 
+var allViolinBows  = function(){
+		$('tr').remove();
+	    $('.searchResults').append('<tr><td><b>Maker</b></td><td><b>Price</b></td><td><b>Date Sold</b></td><td><b>Instrument</b></td></tr>')
+		for(var i=0;i<Data.length; i++){
+			if(Data[i].instrument.toLowerCase()==="violin bow"){
+				var maker = Data[i].maker;
+				var price = Data[i].price;
+				var dateSold = Data[i].auction_date;
+				var instrument = Data[i].instrument; 
+				$('.searchResults').append('<tr><td>'+maker+'</td>'+'<td>'+price+'</td>'+'<td>'+dateSold+'</td>'+'<td>'+instrument+'</td></tr>');
+			}
+		}
+
+}
+
 var allCelloBows  = function(){
 		$('tr').remove();
 	    $('.searchResults').append('<tr><td><b>Maker</b></td><td><b>Price</b></td><td><b>Date Sold</b></td><td><b>Instrument</b></td></tr>')
