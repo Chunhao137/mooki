@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script type="text/javascript" src="data.json"></script>
+	<script type="text/javascript" src = "script.js"></script>
+</head>
+<body>
+  <div class="title"> Instrument Price App</div>
+  <input class="search" type="text" placeholder="Enter a maker's name">
+  <input class="submit" type="submit" value="Submit" onclick="return search();">
+  <br>
+  <center>
+  <img class ="image" src="chanot.jpg">
+  <br>
+
+  <a onclick="allViolin()" href="javascript:void(0);">Violins</a>
+  <a onclick="allViola()" href="javascript:void(0);">Violas</a>
+  <a onclick="allCellos()" href="javascript:void(0);">Cellos</a>
+  <a onclick="allViolinBows()" href="javascript:void(0);">Violin Bows</a>
+  <a onclick="allViolaBows()" href="javascript:void(0);">Viola Bows</a>
+  <a onclick="allCelloBows()" href="javascript:void(0);">Cello Bows</a>
+    </center>
+
+  <table class="searchResults" style="width:100%">
+  </table>
+
+</body>
+</html>
