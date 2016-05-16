@@ -4,16 +4,20 @@
 }
 .search{
 	margin-left: 40%;
+	height:40px;
 	margin-top: 30px;
 	width: 200px;
+	font-size: 20px;
 }
 
 .submit{
-   height: 30px;
+   height: 40px;
+   border-radius: 15px;
 }
 
 .searchResults{
 	margin-top: 30px;
+	font-size: 20px;
 }
 .image{
 	margin-top: 20px;
@@ -22,4 +26,5 @@
 
 a{
    margin-left: 10px;
+   font-size: 20px;
 }
